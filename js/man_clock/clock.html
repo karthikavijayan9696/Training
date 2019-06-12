@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clock</title>
+	<style>
+        .tabBlock
+        {
+            background-color:#57574f;
+            max-width:200px;
+            width:100%;
+            overflow:hidden;
+            display:block;
+        }
+        .clock
+        {
+            vertical-align:middle;
+            font-size:40px;
+            font-weight:normal;
+            color:#FFF;
+            padding:0 10px;
+        }
+        .clocklg 
+        {
+            vertical-align:middle; 
+            font-family:Orbitron;
+            font-size:20px;
+            font-weight:normal;
+            color:#FFF;
+        }
+    </style>
+</head>
+<body onload="digitized();">
+    	<table class="tabBlock" align="center">
+            <tr><td class="clock" id="dc"></td>  
+                <td>
+                    <table >
+                        <tr><td class="clocklg" id="dc_hour"></td></tr>
+                        <tr><td class="clocklg" id="dc_second"></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+</body>
+<script>
+    function digitized() {
+        var dt = new Date();    
+        var hrs = dt.getHours();
+        var min = dt.getMinutes();
+        var sec = dt.getSeconds();
+
+        min = Ticking(min);
+        sec = Ticking(sec);
+
+        document.getElementById('dc').innerHTML = hrs + ":" + min;
+        document.getElementById('dc_second').innerHTML = sec;
+
+        if (hrs > 12) { 
+            document.getElementById('dc_hour').innerHTML = 'PM'; 
+        }
+        else { 
+            document.getElementById('dc_hour').innerHTML = 'AM'; 
+        }
+
+        var time
+        time = setInterval('digitized()', 1000);
+    }
+
+    function Ticking(ticVal) {
+        if (ticVal < 10) {
+            ticVal = "0" + ticVal;
+        }
+        return ticVal;
+    }
+</script>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Table</title>
+    <style>
+        th, td, p, input {
+            font:14px;
+        }
+        table, th, td 
+        {
+            border: solid 1px #DDD;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+        th {
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <button value="button" id="button1" >Click here!</button>
+    <p id="showData"></p>
+    
+</body>
+<script type="text/javascript">
+        var vname=document.getElementById('button1');
+        vname.addEventListener("click",function(){
+        var myreq = new XMLHttpRequest();
+        myreq.open('GET',"https://learnwebcode.github.io/json-example/animals-1.json");
+        myreq.onload=function(){
+        var Mydata=JSON.parse(myreq.responseText);
+        populate(Mydata);
+        }
+        
+        myreq.send();
+    });
+        function populate(data){
+            var str="";
+            for (var i = 0;i<data.length;i++) {
+                str+= "<p>" +data[i].name+ " " + data[i].species+ ".</p>";
+            }
+            document.write(str);
+        }
+    
+    </script>
+
+
+</html>

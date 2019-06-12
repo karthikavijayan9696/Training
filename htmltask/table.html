@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table</title>
+	<style type="text/css">
+
+		
+		table{
+			font-family: arial,sans-serif;
+			border-collapse: collapse;
+			border:none;
+			width: 50%;
+		}
+
+		td, th{
+			border:1px solid #D3D3D3;
+			padding-top: 12px;
+			padding-bottom: 12px;
+			padding-right: 12px;
+			text-align: left;
+		}
+
+		tr:nth-child(odd){
+			background-color: #DCDCDC;
+		}
+		th{
+			background-color: #32CD32;
+			color: white;
+			text-align: left;
+		}
+		img{
+		 height: 25px;
+		 width: 35px;
+		}
+		
+	</style>
+</head>
+<body>
+<table>
+	<tr>
+		<th>Contact name</th>
+		<th>City</th>
+		<th>Country</th>
+		<th>Is Promoted</th>
+	</tr>
+	<tr>
+		<td>Maria Andres</td>
+		<td>Berlin</td>
+		<td><img src="germany.jpg"> Germany</td>
+		<td><input type="checkbox" name="Promoted4" value="london"></td>
+	</tr>
+	<tr>
+		<td>Anna Trujillo</td>
+		<td>Mexico D.F</td>
+		<td><img src="mexico.jpg">Mexico</td>
+		<td><input type="checkbox" name="Promoted3" value="mexico2" checked=""></td>
+	</tr>
+	<tr>
+		<td>Antonio Moreno</td>
+		<td>Mexico D.F</td>
+		<td><img src="mexico.jpg">Mexico</td>
+		<td><input type="checkbox" name="Promoted2" value="mexico1"></td>
+	</tr>
+	<tr>
+		<td>Thomas Hardy</td>
+		<td>London</td>
+		<td><img src="uk.jpg">UK</td>
+		<td><input type="checkbox" name="Promoted1" value="germany"></td>
+	</tr>
+	
+</table>
+</body>
+</html>
