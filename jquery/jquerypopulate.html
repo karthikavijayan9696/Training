@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8"/>
+   <title>Sign UP</title>
+   <link rel="stylesheet" type="text/css" href="index.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+   
+<body>
+   <form>
+       <h1>AJAX </h1>
+       <div id="div1"></div>
+       <ul id = 'ords'> </ul>
+       <script>
+                               var cont=document.getElementById("ords");
+               $(function (){
+                   var $ords= $('#ords')
+                   $.ajax({
+                       type: 'GET',
+                       url: 'https://jsonplaceholder.typicode.com/posts',
+                       success : function(ords){
+                           $.each(ords ,function(i , tms){
+                                $ords.append('<li><b>userId:</b>'+tms.userId+'<br><b> ID :</b>'+tms.id+'<br><b> Title:</b>'+tms.title+ '<br><b>Body :</b>' +tms.body+'</li>');
+                           });
+                       }
+                   });
+               });
+                   </script>
+                   </script>
+</form>
+</body>
+</html>

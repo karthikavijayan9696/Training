@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ecommerce</title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+    <script src="home.js"></script>
+</head>
+<body>
+	<div class="main">
+		<div class="topbar">
+			<div class="socialicon">
+				<div class="container">
+					<div class="icon">
+						<a href="https://facebook.com"><img src="fb.jpg"></a>
+						<a href="#"><img src="rss.jpg" style="margin-left: 3px;"></a>
+						<a href="https://google.com"><img src="g+.jpg" style="margin-left: 3px;"></a>
+						<a href="https://twitter.com"><img src="wg.jpg" style="margin-left: 3px;"></a>
+					</div>
+					<div class="login-cart">
+						<div class="login">
+						<a href="#" onclick="loginform()">LOGIN</a>
+							<div class="form-loginpopup" id="myloginForm">
+								<div style="float: right;"><button type="submit" style="height: 20px;width: 20px;"onclick="loginclose()"><i class="fa fa-close"></i></button></div>
+							  <form action="" class="login-container">
+							  	<center><h1>LOGIN</h1></center>
+							  	
+							    <table>
+							    	<tr><td colspan="2">USERNAME</td></tr>
+							    	<tr><td colspan="2"><input type="text" name="" placeholder="USERNAME"></td></tr>
+							    	<tr><td colspan="2">PASSWORD</td></tr>
+							    	<tr><td colspan="2"><input type="password" name="" placeholder="PASSWORD"></td></tr>
+							    	<tr ><td colspan="2"><center>
+							    	<button class="signinbtn" type="button" class="btncancel" onclick="loginclose()">SIGNIN</button></center></td></tr>
+							    	<tr style="text-align: left;"><td><a href="#" style="font-size: 16px; color: black;">ForgetPassword?</a></td>
+							    		<td><a href="#" style="font-size: 16px; color: black;">Register?</a></td></tr>
+							    </table> 
+
+							  </form>
+							 
+							</div>
+						<a href="#">REGISTER</a>
+						</div>
+
+						<div class="cart">
+						<a href="shop.html"><img src="cart.jpg" style="height: 50px;width: 60px;"></a>
+						</div>
+						<div class="ds">
+							<div class="dropdown">
+						  <button class="dropbtn">MENU</button>
+						  <div class="dropdown-content">
+						  	<a href="jabonghome.html">HOME</a>
+						    <a href="shop.html">STORE</a>
+						    <a href="#">ABOUT US</a>
+						    <a href="#">CONTACT</a>
+
+						  </div>
+						  <div class="search-container">
+    							<form >
+      							<input type="text" placeholder="Search.." name="search">
+      							<button type="submit"><i class="fa fa-search"></i></button>
+   								 </form>
+ 							 </div>
+ 					</div>
+						
+						  
+					</div>
+					<div class="content">
+						<img src="jabong.jpg" style="width:250px;height: 100%;">
+							<div class="nav_r">
+								<ul class="menu">
+									<li><a href="shop.html">MEN</a></li>
+									<li><a href="shop.html">WOMEN</a></li>
+									<li><a href="shop.html">KIDS</a></li>
+									<li><a href="shop.html">SPORTS</a></li>
+									<li><a href="shop.html">ACCESSORIES</a></li>
+
+								</ul>
+							</div>	
+					</div>
+					<div class="slide_cont">
+					<div class="slide_out">
+						<img src="arrow-left.png" class="prev" alt="Prev">
+						<div class="slide_in">
+							<img src="img1.jpg" class="active">
+							<img src="img3.jpg">
+							<img src="img2.jpg">
+							<img src="img4.jpg">
+
+						</div>
+						<img src="arrow-right.png" class="next" alt="Next">
+					</div> 
+					</div>
+					<div class="side">
+						<div class="men" class="side1"><a href="shop.html"><img src="img11.jpg" style="height: 150px;width: 100%;"></a></div>
+						<div class="women" class="side1"><a href="shop.html"><img src="img22.jpg" style="height: 150px;width: 100%;"></a></div>
+						<div class="kids" class="side1"><a href="shop.html"><img src="img33.jpg" style="height: 150px;width: 100%;"></a></div>
+						
+					</div>
+					<div class="shopnow" ><a href="shop.html"><button class="open-button">SHOP NOW<img src="cart.jpg" style="height: 25px;width: 25px;"></button></a>
+					</div>
+					<footer class="foot">
+					Copyright <a href="#" style="color: orange;text-decoration: none;"> Yoursite.</a>  All rights reserved.
+					</footer>
+						
+					
+
+					</div>	
+				</div>
+			</div>		
+		</div>	
+	</div>
+
+</body>
+</html>

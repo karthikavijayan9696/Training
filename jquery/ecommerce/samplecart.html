@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Testing</title>
+    <script type="text/javascript" src="samplecart.js"></script>
+</head>
+<body>
+    <h1>OOP Shopping Cart using jQuery</h1>
+
+    <form action="" method="post" accept-charset="utf-8">
+        <input type="hidden" name="id" value="1">
+        <input type="hidden" name="name" value="Bag">
+        <input type="hidden" name="price" value="500">
+        <button type="button" class="addButton">
+            Item 1 Bag
+        </button>
+    </form>
+
+    <form action="" method="post" accept-charset="utf-8">
+        <input type="hidden" name="id" value="2">
+        <input type="hidden" name="name" value="Shoe">
+        <input type="hidden" name="price" value="700">
+        <button type="button" class="addButton">
+            Item 2 Shoe
+        </button>
+    </form>
+    
+    <button type="button" class="remove">
+        Remove
+    </button>
+
+    <hr>
+
+    <h4>Shopping Cart</h4>
+
+    <table>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>price</th>
+                <th>quantity</th>
+                <th>sub total</th>
+                <th>option</th>
+            </tr>
+        </thead>
+        <tbody id="cart">
+            
+        </tbody>
+    </table>
+
+    <hr>
+
+    <div id="total"></div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+</body>
+</html>
