@@ -1,0 +1,59 @@
+ .navul li{
+			float: left;
+			text-align: center;
+			width: 100px;
+			list-style: none;
+			border-right: 1px solid black;
+
+}
+.con1{
+	
+	margin: 15px;
+	border-bottom: 1px solid grey;
+	text-align: justify;
+
+}
+
+.inner{
+	width: 20%;
+	height: 70%;
+	float: left;
+	margin: 10px;
+	background-color: #cccccc;
+}
+.innerh{
+	margin: 5%;
+}
+
+.con2_1{
+	border-bottom: 1px solid grey;
+	border-top: 1px solid grey;
+	text-align: left;
+}
+.con2_1 li{
+	list-style: none;
+
+}
+h2, p{
+	font-size: 100%;
+}
+.con2_1 a{
+	color: orange;
+	text-decoration: none;
+}
+.con2_2{
+	text-align: left;
+	padding: 15px;
+	margin-bottom: 100px;
+	text-align: justify;
+
+}
+.foot{
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 10px;
+    background-color:#333333 ;
+    color: black;
+	}
